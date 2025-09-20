@@ -10,3 +10,8 @@ my_input = " Hello World "
 print(my_input)
 my_input_strp = my_input.strip()
 print(my_input_strp)
+
+#Upper
+my_input = "Hello World"
+my_input_Upper = my_input.upper()
+print(my_input_Upper)
