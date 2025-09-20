@@ -29,3 +29,18 @@ class Persona:
     @Phone.setter
     def Phone(self, value):
         self._phone = value
+
+    def __str__(self):
+        return f"Persona=[name:{self._name} {self._last}, mail:{self._mail}, phone:{self._phone}]"
+
+    def dict_persona(self):
+        return {
+            "Person Information": {
+                "Name": self._name,
+                "Last": self._last
+            },
+            "Contact Information": {
+                "Mail": self._mail,
+                "Phone": self._phone
+            },
+        }
